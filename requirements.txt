@@ -1,0 +1,8 @@
+flask
+transformers
+sentence-transformers
+torch
+numpy
+nltk
+faiss-cpu
+python-dotenv
