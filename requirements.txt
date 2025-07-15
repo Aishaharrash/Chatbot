@@ -6,3 +6,4 @@ numpy
 nltk
 faiss-cpu
 python-dotenv
+gunicorn
