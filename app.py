@@ -15,7 +15,7 @@ from nltk.tokenize import sent_tokenize
 load_dotenv()
 
 # --- MODEL SETUP ---
-def load_mistral_model(model_name="mistralai/Mistral-7B-Instruct-v0.1", hf_token=None):
+def load_mistral_model(model_name="TinyLlama/TinyLlama-1.1B-Chat-v1.0", hf_token=None):
     device = "cuda" if torch.cuda.is_available() else "cpu"
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_auth_token=hf_token)
     model = AutoModelForCausalLM.from_pretrained(
